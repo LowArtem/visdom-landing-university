@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+
+p {
+    display: inline-block;
+}
+
+.header {
+    background: linear-gradient(98.99deg, #141E30 39.07%, #243B55 90.1%);
+    height: 100em;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 210px;
+
+}
+
+.title {
+    text-decoration: none;
+}
+
+.title_icon {
+    vertical-align: middle;
+}
+
+.title_text {
+    color: #fff;
+    font-size: 22px;
+    line-height: 26px;
+    vertical-align: middle;
+}
