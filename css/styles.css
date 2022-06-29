@@ -29,14 +29,24 @@ a {
     text-decoration: none;
 }
 
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     background: linear-gradient(98.99deg, #141E30 39.07%, #243B55 90.1%);
 }
 
-.container {
+.header_container {
     max-width: 1180px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 74px;
     margin: 0px auto;
+    box-sizing: content-box;
 }
 
 nav {
@@ -48,6 +58,7 @@ nav {
 .menu {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     width: 50%;
@@ -110,4 +121,8 @@ nav {
     text-align: center;
     font-size: 26px;
     padding-top: 2%;
+}
+
+.main {
+    flex: 1 1 auto;
 }
