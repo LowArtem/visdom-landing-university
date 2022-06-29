@@ -37,15 +37,20 @@ a {
 }
 
 .red_slice {
+    position: absolute;
+    z-index: 1;
     background-color: #E1214A;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     height: 765.6px;
+    padding-bottom: 200px;
     clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0%);
 }
 
 .triangle_slicing {
-    margin-top: -780px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
     display: flex;
     background: linear-gradient(98.99deg, #141E30 39.07%, #243B55 90.1%);
     clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0%);
@@ -165,26 +170,33 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    z-index: 2;
-    margin: -400px 180px;
+    z-index: 3;
+    margin: 360px 180px;
     padding-bottom: 500px;
 }
 
 @media (max-width: 1600px) {
     .header_illustration {
-        margin: -400px 50px;
+        margin: 360px 50px;
     }
 }
 
 @media (max-width: 1300px) {
     .header_illustration {
-        margin: -400px 10px;
+        margin: 360px 10px;
     }
 }
 
 @media (max-width: 1020px) {
     .header_illustration {
-        margin: -230px;
+        margin-top: 500px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .header_illustration {
+        margin-top: 600px;
         align-items: center;
     }
 }
@@ -198,6 +210,39 @@ nav {
 
 @media (max-width: 450px) {
     .header_illustration img {
+        margin-top: 30px;
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .header_illustration img {
+        margin-top: 70px;
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .header_illustration img {
+        margin-top: 120px;
+        width: 400px;
+        height: auto;
+    }
+
+    .header_slogan {
+        font-size: 46px;
+    }
+
+    .header_main_text_line {
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 385px) {
+    .header_illustration img {
+        margin-top: 180px;
         width: 400px;
         height: auto;
     }
@@ -205,6 +250,7 @@ nav {
 
 @media (max-width: 350px) {
     .header_illustration img {
+        margin-top: 220px;
         width: 350px;
         height: auto;
     }
