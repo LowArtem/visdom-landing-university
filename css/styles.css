@@ -142,12 +142,30 @@ h3 {
 }
 
 .header {
-  background: linear-gradient(98.99deg, #141E30 39.07%, #243B55 90.1%);
+  position: relative;
 }
 .header h1,
 .header h2,
 .header h3 {
   color: #fff;
+}
+.header__background {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(98.99deg, #141E30 39.07%, #243B55 90.1%);
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0%);
+  padding-bottom: 400px;
+}
+.header__red-slice {
+  position: absolute;
+  background-color: #E1214A;
+  width: 100%;
+  padding-top: 20px;
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0%);
+          clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0%);
+  padding-bottom: 400px;
 }
 .header__content {
   padding: 40px 15px;
