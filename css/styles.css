@@ -36,6 +36,11 @@ a {
     flex-direction: column;
 }
 
+.header {
+    position: relative;
+    padding-bottom: 1000px;
+}
+
 .red_slice {
     position: absolute;
     z-index: 1;
@@ -43,8 +48,8 @@ a {
     width: 100%;
     margin-top: 20px;
     height: 765.6px;
-    padding-bottom: 200px;
     clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0%);
+    padding-bottom: 400px;
 }
 
 .triangle_slicing {
@@ -54,7 +59,7 @@ a {
     display: flex;
     background: linear-gradient(98.99deg, #141E30 39.07%, #243B55 90.1%);
     clip-path: polygon(0% 0%, 0% 100%, 100% 75%, 100% 0%);
-    padding-bottom: 200px;
+    padding-bottom: 400px;
 }
 
 .header_container {
@@ -166,13 +171,13 @@ nav {
 }
 
 .header_illustration {
-    position: relative;
+    position: absolute;
+    right: 0;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    z-index: 3;
     margin: 360px 180px;
-    padding-bottom: 500px;
 }
 
 @media (max-width: 1600px) {
@@ -188,6 +193,10 @@ nav {
 }
 
 @media (max-width: 1020px) {
+    .header {
+        padding-bottom: 1100px;
+    }
+
     .header_illustration {
         margin-top: 500px;
         align-items: center;
@@ -195,6 +204,10 @@ nav {
 }
 
 @media (max-width: 800px) {
+    .header {
+        padding-bottom: 1200px;
+    }
+
     .header_illustration {
         margin-top: 600px;
         align-items: center;
@@ -258,4 +271,5 @@ nav {
 
 .main {
     flex: 1 1 auto;
+    color: #000;
 }

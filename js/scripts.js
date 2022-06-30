@@ -3,7 +3,6 @@
 function setHead() {
     height = $('#main').height();
     $('#red').height(height);
-    console.log(height);
 }
 
 
