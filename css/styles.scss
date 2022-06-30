@@ -8,10 +8,10 @@
 $minWidth: 320px;
 $maxWidth: 1600;
 $maxWidthContainer: 1180;
-$md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$md1: $maxWidthContainer + 12px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
 
 
 // Базовые элементы -----------------------------------------------------
@@ -27,15 +27,15 @@ body {
     max-width: $maxWidthContainer + px;
     margin: 0 auto;
 
-    @media (max-width: $md1+px) {
+    @media (max-width: $md1) {
         max-width: 970px;
     }
 
-    @media (max-width: $md2+px) {
+    @media (max-width: $md2) {
         max-width: 750px;
     }
 
-    @media (max-width: $md3+px) {
+    @media (max-width: $md3) {
         max-width: none;
         padding: 0 10px;
     }
@@ -163,22 +163,50 @@ h3 {
         align-items: center;
         justify-content: space-between;
 
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             flex-direction: column;
+        }
+    }
+
+    // .header-main__image
+
+    &__image {
+        width: 50%;
+        max-height: 203px;
+        max-width: 497px;
+        min-width: 285px;
+        height: auto;
+
+        @media (max-width: $md1) {
+            max-width: 440px;
+        }
+
+        @media (max-width: $md2) {
+            max-width: 330px;
+        }
+    }
+
+    // .header-main__title
+
+    &__title {
+        display: inline-block;
+
+        @media (max-width: $md4) {
+            text-align: center;
         }
     }
 
     // .header-main__description
 
     &__description {
-        padding-top: 40px;
+        padding-top: 50px;
 
-        @media (max-width: $md3+px) {
+        @media (max-width: $md3) {
             text-align: center;
         }
     }
 
-    @media (max-width: $md1+px) {
+    @media (max-width: $md1) {
         h1 {
             font-size: 58px;
         }
@@ -188,7 +216,7 @@ h3 {
         }
     }
 
-    @media (max-width: $md2+px) {
+    @media (max-width: $md2) {
         h1 {
             font-size: 45px;
         }
@@ -198,43 +226,13 @@ h3 {
         }
     }
 
-    @media (max-width: $md4+px) {
+    @media (max-width: $md4) {
         h1 {
             font-size: 38px;
         }
 
         h3 {
             font-size: 18px;
-        }
-    }
-}
-
-.big-logo {
-    // .big-logo__image
-
-    &__image {
-        width: 50%;
-        max-height: 203px;
-        max-width: 497px;
-        min-width: 285px;
-        height: auto;
-
-        @media (max-width: $md1+px) {
-            max-width: 440px;
-        }
-
-        @media (max-width: $md2+px) {
-            max-width: 330px;
-        }
-    }
-
-    // .big-logo__title
-
-    &__title {
-        display: inline-block;
-
-        @media (max-width: $md4+px) {
-            text-align: center;
         }
     }
 }
