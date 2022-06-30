@@ -9,59 +9,52 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div id="main" class="triangle_slicing">
-                <div class="header_container">
-                    <nav>
-                        <a class="title" href="#">
-                            <img class="title_icon" src="icons/favicon_clear.png" alt="Favicon" width="43px"
-                                height="48px">
-                            <p class="title_text">V.I.S.D.O.M. Lab</p>
-                        </a>
-                        <span class="menu">
-                            <a href="#">Проекты</a>
-                            <a href="#">Партнёры</a>
-                            <a href="#">Специалисты</a>
-                            <a href="#">Контакты</a>
-                        </span>
+    <header class="header">
+        <div id="main" class="header__background">
+            <div class="header__content _container">
+                <div class="header__menu menu">
+                    <a href="#" class="menu__logo logo">
+                        <img src="icons/favicon_clear.png" alt="Favicon" class="logo__image">
+                        <span class="logo__text">V.I.S.D.O.M. Lab</span>
+                    </a>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li><a href="#" class="menu__link">Проекты</a></li>
+                            <li><a href="#" class="menu__link">Партнёры</a></li>
+                            <li><a href="#" class="menu__link">Специалисты</a></li>
+                            <li><a href="#" class="menu__link">Контакты</a></li>
+                        </ul>
                     </nav>
-
-                    <section class="header_main">
-                        <div class="header_main_text_line">
-                            <img class="logo_icon" src="icons/Logo.png" alt="Logo">
-                            <span class="header_slogan">Научный подход к разработке ПО</span>
+                </div>
+                <div class="header__main header-main">
+                    <div class="header-main__logo">
+                        <img src="icons/Logo.png" alt="Logo" class="header-main__image">
+                        <div class="header-main__title">
+                            <h1>Научный подход <br> к разработке ПО</h1>
                         </div>
-                        <div>
-                            <p class="header_logo_text">Volgograd Innovative Semantic Data Observation and Management
-                                Laboratory
-                            </p>
-                        </div>
-                    </section>
+                    </div>
+                    <div class="header-main__description">
+                        <h3>Volgograd Innovative Semantic Data <br> Observation and Management Laboratory</h3>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div id="red" class="header__red-slice"></div>
+        <div class="header__illustration">
+            <img src="icons/IT-picture-1.png" alt="Illustration">
+        </div>
+    </header>
 
-            <div id="red" class="red_slice"></div>
+    <main class="main">
 
-            <div class="header_illustration">
-                <img src="icons/IT-picture.png" alt="Illustration">
-            </div>
-        </header>
-
-        <main class="main">
-
-        </main>
-
-        <footer class="footer">
-
-        </footer>
-    </div>
+    </main>
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
