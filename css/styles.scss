@@ -230,6 +230,11 @@ h3 {
     &__link {
         color: #8794BA;
         font-size: 18px;
+
+        &:hover,
+        &:focus {
+            color: #cbd0df;
+        }
     }
 }
 
@@ -332,6 +337,151 @@ h3 {
 
         h3 {
             font-size: 18px;
+        }
+    }
+}
+
+// Main block ---------------------------------------------------------------------
+
+.section-title {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 23px;
+    color: #000;
+
+    @media (max-width: $md1) {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    @media (max-width: $md2) {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    @media (max-width: $md3) {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+.main {}
+
+// Проекты ---------------------------------------------------------------------
+
+.projects {
+
+    // .projects__content
+
+    &__content {}
+
+    // .projects__title
+
+    &__title {}
+
+    // .projects__body
+
+    &__body {}
+
+    // .projects__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+
+        @media (max-width: $md2) {
+            gap: 110px;
+        }
+    }
+
+    // .projects__card
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: $md2) {
+            flex-direction: column;
+            justify-content: center;
+            gap: 35px;
+        }
+    }
+
+    &__text {
+        max-width: 585px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        @media (max-width: $md1) {
+            max-width: 450px;
+        }
+    }
+
+    // .projects__name
+
+    &__name {
+        text-align: center;
+
+        @media (max-width: $md1) {
+            h2 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: $md2) {
+            h2 {
+                font-size: 34px;
+            }
+        }
+
+        @media (max-width: $md3) {
+            h2 {
+                font-size: 28px;
+            }
+        }
+    }
+
+    // .projects__description
+
+    &__description {}
+
+    // .projects__image
+
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__image_reverted {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 98%;
+        }
+
+        @media (max-width: $md2) {
+            order: 1;
+        }
+    }
+
+    @media (max-width: $md1) {
+        img {
+            width: 85%;
         }
     }
 }

@@ -290,6 +290,9 @@ h3 {
   color: #8794BA;
   font-size: 18px;
 }
+.menu__link:hover, .menu__link:focus {
+  color: #cbd0df;
+}
 
 .logo__image {
   width: 43.38px;
@@ -368,5 +371,113 @@ h3 {
   }
   .header-main h3 {
     font-size: 18px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 23px;
+  color: #000;
+}
+@media (max-width: 1192px) {
+  .text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 991.98px) {
+  .text {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+@media (max-width: 767.98px) {
+  .text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+@media (max-width: 991.98px) {
+  .projects__list {
+    gap: 110px;
+  }
+}
+.projects__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+  .projects__card {
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+  }
+}
+.projects__text {
+  max-width: 585px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+@media (max-width: 1192px) {
+  .projects__text {
+    max-width: 450px;
+  }
+}
+.projects__name {
+  text-align: center;
+}
+@media (max-width: 1192px) {
+  .projects__name h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 991.98px) {
+  .projects__name h2 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767.98px) {
+  .projects__name h2 {
+    font-size: 28px;
+  }
+}
+.projects__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects__image img {
+  width: 100%;
+}
+.projects__image_reverted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects__image_reverted img {
+  width: 98%;
+}
+@media (max-width: 991.98px) {
+  .projects__image_reverted {
+    order: 1;
+  }
+}
+@media (max-width: 1192px) {
+  .projects img {
+    width: 85%;
   }
 }/*# sourceMappingURL=styles.css.map */
