@@ -385,7 +385,9 @@ h3 {
 
     // .projects__body
 
-    &__body {}
+    &__body {
+        padding-bottom: 80px;
+    }
 
     // .projects__list
 
@@ -415,6 +417,7 @@ h3 {
     }
 
     &__text {
+        flex: 1 1 auto;
         max-width: 585px;
         display: flex;
         flex-direction: column;
@@ -482,6 +485,44 @@ h3 {
     @media (max-width: $md1) {
         img {
             width: 85%;
+        }
+    }
+}
+
+// Партнёры ---------------------------------------------------------------------
+
+.partners {
+
+    // .partners__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        background-color: #E5ECF4;
+        padding: 0 20px;
+        padding-bottom: 80px;
+    }
+
+    // .partners__title
+
+    &__title {
+        padding-top: 55px;
+        padding-bottom: 30px;
+    }
+
+    // .partners__image
+
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+
+            // @media (max-width: $md3) {
+            //     transform: rotate(90deg);
+            // }
         }
     }
 }
