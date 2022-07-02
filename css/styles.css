@@ -137,6 +137,12 @@ h2 {
   font-size: 40px;
   line-height: 47px;
 }
+@media (max-height: 479.98px) {
+  h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
 
 h3 {
   font-weight: 400;
@@ -638,4 +644,11 @@ h3 {
   .masters__photo img {
     width: 100%;
   }
+}
+
+.location__content {
+  padding: 90px 0;
+}
+.location__title {
+  padding: 0 10px;
 }/*# sourceMappingURL=styles.css.map */

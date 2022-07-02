@@ -55,6 +55,11 @@ h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 47px;
+
+    @media (max-height: $md4) {
+        font-size: 32px;
+        line-height: 45px;
+    }
 }
 
 h3 {
@@ -696,5 +701,21 @@ h3 {
                 width: 100%;
             }
         }
+    }
+}
+
+// Карта --------------------------------------------------------------------
+.location {
+
+    // .location__content
+
+    &__content {
+        padding: 90px 0;
+    }
+
+    // .location__title
+
+    &__title {
+        padding: 0 10px;
     }
 }
