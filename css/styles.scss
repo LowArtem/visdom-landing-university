@@ -353,19 +353,48 @@ h3 {
     line-height: 23px;
     color: #000;
 
+    &_white {
+        font-size: 17px;
+        line-height: 17px;
+        font-weight: 700;
+        color: #fff;
+    }
+
     @media (max-width: $md1) {
         font-size: 18px;
         line-height: 20px;
+
+        &_white {
+            font-size: 16px;
+            line-height: 16px;
+        }
     }
 
     @media (max-width: $md2) {
         font-size: 20px;
         line-height: 23px;
+
+        &_white {
+            font-size: 17px;
+            line-height: 17px;
+        }
     }
 
     @media (max-width: $md3) {
         font-size: 18px;
         line-height: 20px;
+
+        &_white {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+
+    @media (max-width: $md4) {
+        &_white {
+            font-size: 14px;
+            line-height: 14px;
+        }
     }
 }
 
@@ -514,15 +543,149 @@ h3 {
 
     &__image {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
 
         img {
             width: 100%;
+        }
+    }
+}
 
-            // @media (max-width: $md3) {
-            //     transform: rotate(90deg);
-            // }
+// Специалисты -------------------------------------------------------------------
+.masters {
+
+    // .masters__content
+
+    &__content {}
+
+    // .masters__title
+
+    &__title {
+        padding-top: 90px;
+    }
+
+    // .masters__body
+
+    &__body {
+        padding-bottom: 80px;
+    }
+
+    // .masters__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+
+        @media (max-width: $md2) {
+            gap: 120px;
+        }
+    }
+
+    // .masters__card
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 36px;
+
+        @media (max-width: $md2) {
+            flex-direction: column;
+        }
+    }
+
+    // .masters__description-background
+
+    &__description-background {
+        display: flex;
+        background-color: #E1214A;
+        box-shadow: 5px 7px 35px 9px rgba(47, 60, 79, 0.4);
+        border-radius: 30px;
+
+        @media (min-width: $md2) {
+            height: 583px;
+        }
+
+        @media (max-width: $md2) {
+            width: 592px;
+        }
+
+        @media (max-width: $md3) {
+            width: auto;
+        }
+    }
+
+    // .masters__description-body
+
+    &__description-body {
+        padding: 0 30px;
+        padding-top: 35%;
+        text-align: center;
+
+        @media (max-width: $md2) {
+            padding: 30px;
+        }
+    }
+
+    // .masters__description-name
+
+    &__description-name {
+
+        padding-bottom: 30px;
+
+        p {
+            font-size: 34px;
+            line-height: 40px;
+            text-transform: uppercase;
+
+            @media (max-width: $md4) {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+
+        // .masters__description-name_accent
+
+        &_common {
+            font-weight: 700;
+            color: #000;
+        }
+
+        &_accent {
+            font-weight: 800;
+            color: #fff;
+        }
+    }
+
+    // .masters__description-text
+
+    &__description-text {}
+
+    // .masters__photo
+
+    &__photo {
+        img {
+            border-radius: 30px;
+            box-shadow: 5px 7px 35px 9px rgba(47, 60, 79, 0.4);
+        }
+
+        &_reverted {
+            @media (max-width: $md2) {
+                order: 1;
+            }
+        }
+
+        @media (max-width: $md3) {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }

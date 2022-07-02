@@ -13,6 +13,7 @@ window.onresize = function (event) {
     setRedHeight();
 };
 
+// анимация перехода по внутренним ссылкам
 $(document).ready(function () {
     $("#menu").on("click", "a", function (event) {
         event.preventDefault();
