@@ -654,8 +654,8 @@ h3 {
   padding: 90px 0;
 }
 .location__title {
-  padding: 0 10px;
-  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .footer__background {
