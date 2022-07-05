@@ -94,6 +94,8 @@ a {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   color: #000;
   font-size: 14px;
   font-family: "Century Gothic";
@@ -214,6 +216,7 @@ h3 {
   align-items: center;
 }
 .header__main {
+  flex: 1 1 auto;
   padding-top: 125px;
   display: flex;
   flex-direction: column;
@@ -660,6 +663,21 @@ h3 {
 
 .footer__background {
   background: linear-gradient(98.99deg, #141E30 39.07%, #243B55 90.1%);
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  -webkit-clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
+  padding-top: 80px;
+}
+.footer__red-slice {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  -webkit-clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #E1214A;
+  padding-bottom: 250px;
 }
 .footer__content {
   padding-top: 60px;
