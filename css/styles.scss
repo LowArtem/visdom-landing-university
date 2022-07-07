@@ -17,7 +17,7 @@ $md4: 479.98px;
 // Базовые элементы -----------------------------------------------------
 body {
     display: flex;
-    // position: relative;
+    position: relative;
     flex-direction: column;
     color: #000;
     font-size: 14px;
@@ -738,11 +738,24 @@ h3 {
 
     &__red-slice {
         position: absolute;
-        z-index: 3;
         width: 100%;
-        clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 44%, 100% 0%, 100% 100%, 0% 100%);
         background-color: #E1214A;
-        padding-bottom: 250px;
+        bottom: -280px;
+
+        @media (max-width: $md2) {
+            bottom: -260px;
+        }
+
+        @media (max-width: $md3) {
+            bottom: -405px;
+            clip-path: polygon(0% 41%, 100% 0%, 100% 100%, 0% 100%);
+        }
+
+        @media (max-width: $md4) {
+            bottom: -440px;
+            clip-path: polygon(0% 41%, 100% 0%, 100% 100%, 0% 100%);
+        }
     }
 
     // .footer__content
